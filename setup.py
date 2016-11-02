@@ -4,6 +4,6 @@ from setuptools import setup
 
 setup(
     name="pyspark",
-    py_modules=['pyspark'],
+    packages=['pyspark', 'pyspark.ml', 'pyspark.mlib', 'pyspark.sql', 'pyspark.streaming'],
     version="0.2.1",
 )
