@@ -165,6 +165,8 @@ def main(infile, outfile):
         def process():
             iterator = deserializer.load_stream(infile)
             serializer.dump_stream(func(split_index, iterator), outfile)
+            for obj in iterator:
+                pass
 
         if profiler:
             profiler.profile(process)
